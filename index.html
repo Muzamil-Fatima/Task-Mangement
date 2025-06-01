@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Task Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="tasks.html">Tasks</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="timetable.html">Timetable</a></li>
+        </ul>
+    </nav>
+
+    <section class="student-dashboard">
+        <h2>Welcome to Your Dashboard</h2>
+
+        <!-- Motivational Quote Display -->
+        <div class="motivation">
+            <h3>Today's Motivation</h3>
+            <p id="quote">"Stay focused and never give up!"</p>
+        </div>
+
+        <!-- Form for Adding Motivational Quotes -->
+        <div class="add-quote">
+            <h3>Add Your Own Motivation</h3>
+            <form id="quoteForm">
+                <textarea id="newQuote" placeholder="Enter your motivational quote here..." rows="4" required></textarea>
+                <br />
+                <button type="submit">Add Quote</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="timetable">
+        <h2>Your Timetable</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Subject</th>
+                    <th>Topics to Study</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>10:00 AM - 11:00 AM</td>
+                    <td>Math</td>
+                    <td>Linear Equations</td>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>11:30 AM - 12:30 PM</td>
+                    <td>English</td>
+                    <td>Essay Writing</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>10:00 AM - 11:00 AM</td>
+                    <td>Science</td>
+                    <td>Newton's Laws</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>10:00 AM - 11:00 AM</td>
+                    <td>History</td>
+                    <td>World War II</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>10:00 AM - 11:00 AM</td>
+                    <td>Math</td>
+                    <td>Quadratic Equations</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>10:00 AM - 11:00 AM</td>
+                    <td>Computer Science</td>
+                    <td>Data Structures</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks - Task Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="tasks.html">Tasks</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="timetable.html">Timetable</a></li>
+        </ul>
+    </nav>
+
+    <section class="tasks">
+        <h2>Your Tasks</h2>
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="Enter your task..." required />
+            <input type="date" id="dueDate" required />
+            <button type="submit">Add Task</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="taskList">
+                <!-- Task items will be dynamically added here -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="tasks.js"></script>
+</body>
+</html>
